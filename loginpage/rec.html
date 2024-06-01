@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rec.css">
+    <title>Retrieve Folder</title>
+</head>
+<body>
+    <div class="j">
+        <a href="index.html">
+            <img src="college_logo.png">
+        </a>
+    </div>
+    <div class="a">
+        <input type="file" id="folderInput" webkitdirectory directory multiple onchange="loadFiles()">
+    </div>
+    <ol id="fileList"></ol>
+
+    <div id="selectedFileName"></div>
+
+    <div id="fileContent"></div>
+</body>
+<script src="rec.js"></script>
+</html>

@@ -1,0 +1,61 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #F1E5D1;
+            margin: 0;
+            padding: 0;
+            height: 85vh;
+        }
+
+        #fileList {
+            list-style-type: decimal;
+            margin-top: 20px;
+            padding-left: 20px;
+            font-size: 24px;
+            margin-left: 37%;
+        }
+
+        #fileList a {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+
+        #fileContent {
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        #fileContent pre {
+            font-size: 24px;
+        }
+
+        #folderInput {
+            font-size: 40px;
+        }
+
+        .a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        #selectedFileName {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .j img {
+            position: absolute;
+            left: 4%;
+            top: 6%;
+            width: 75px;
+            height: 75px;
+            cursor: pointer;
+        }

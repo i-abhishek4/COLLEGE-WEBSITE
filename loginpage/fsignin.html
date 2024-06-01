@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singupin.css">
+    <title>Sign Up & Login</title>
+    <style>
+      body {
+    font-family: 'Poppins', sans-serif;
+    background: #DBB5B5;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #7DCEA0;
+}
+input[type="submit"] {
+    background-color:#F1E5D1;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #987070;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.checkbox-container label {
+    font-size: 16px;
+    color: #555;
+    margin-left: 5px;
+}
+.a img {
+    position: absolute;
+    left:4%;
+    top: 6%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}  
+    </style>
+</head>
+<body>
+    <div class="a">
+        <a href="index.html">
+            <img src="college_logo.png">
+        </a>
+    </div>
+    <div class="container">
+       
+        </form>
+
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="showLoginPasswordCheckbox" onchange="toggleLoginPasswordVisibility()">
+                <label for="showLoginPasswordCheckbox">Show Password</label>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+<script src="fsignin.js"></script>
+</html>

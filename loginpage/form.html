@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div class="d">
+        <div class="a">
+            <a href="index.html">
+                <img src="college_logo.png" alt="Home">
+            </a>
+            Fill your details
+        </div>
+        <div class="b">
+            <form id="studentForm">
+                <div>
+                    <label for="rollno">Roll No:</label>
+                    <input type="text" name="rollno" id="rollno" maxlength="50" placeholder="Enter your Roll No." required>
+                </div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" maxlength="50" placeholder="Enter your Name" required>
+                </div>
+                <div>
+                    <label for="year">Year:</label>
+                    <input type="text" name="year" id="year" maxlength="50" placeholder="Enter your Year" required>
+                </div>
+                <div>
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>Choose an option</option>
+                        <option value="CSE">CSE</option>
+                        <option value="AIML">AIML</option>
+                        <option value="CYBER SECURITY">CYBER SECURITY</option>
+                        <option value="DATA SCIENCE">DATA SCIENCE</option>
+                        <option value="MECHANICAL">MECHANICAL</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="EIE">EIE</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="attendance">Attendance %:</label>
+                    <input type="text" name="attendance" id="attendance" maxlength="50" placeholder="Enter your Attendance" required>
+                </div>
+                <div>
+                    <label for="cgpa">CGPA:</label>
+                    <input type="text" id="cgpa" name="cgpa" placeholder="Enter your CGPA" required>
+                </div>
+                <div class="e">
+                    <input type="submit" style="background-color: rgb(237 238 242); font-weight: 500; letter-spacing: 1px; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; width: 20%; height: 30px;" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
